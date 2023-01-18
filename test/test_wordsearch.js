@@ -35,4 +35,11 @@ describe("#wordSearch()", function() {
 
     assert.isTrue(result);
   });
+
+  it("should return a the phrase 'Please check your conditions' if there are no letters in the matrix, or no word to search for", function() {
+    const result = wordSearch([], 'SEINFELD')
+
+    assert.equal(result, "Please check your conditions");
+  });
+
 });
